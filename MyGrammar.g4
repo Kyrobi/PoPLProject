@@ -11,6 +11,9 @@ MINUS_SET: '-=';
 MULT_SET: '*=';
 DIV_SET: '/=';
 
-start: S;
-S: '0' S '0' | '0' S '1' | '1' S '0' | '1' S '1' | '0' | '1';
+VAR: [a-zA-Z_][a-zA-Z0-9_]*;
+INT: [0-9]+;
+FLOAT: [0-9]+'.'[0-9]+;
 WS: [ \t\r\n]+ -> skip;
+
+

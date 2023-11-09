@@ -1,2 +1,12 @@
 
 *.pyc
+MyGrammar.interp
+MyGrammar.tokens
+MyGrammarLexer.py
+MyGrammarParser.py
+MyGrammarListener.py
+MyGrammarLexer.tokens
+MyGrammarLexer.py
+MyGrammarLexer.interp
+MyGrammar.tokens
+MyGrammar.interp
