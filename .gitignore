@@ -10,3 +10,8 @@ MyGrammarLexer.py
 MyGrammarLexer.interp
 MyGrammar.tokens
 MyGrammar.interp
+.idea/vcs.xml
+.idea/PoPLProject.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/discord.xml

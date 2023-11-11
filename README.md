@@ -19,7 +19,10 @@ guaranteed to work.
 
 libraries required:
 - antlr4 (pip install antlr4-python3-runtime)
+- antlr4 (sudo apt-get install antlr4)
 - antlr4 tools (pip install antlr4-tools)
+- grun (sudo apt install grun)
+
 
 # How to use:
 1. Clone the files to your local computer.
@@ -29,3 +32,8 @@ libraries required:
 3. Run ./build.sh to generate all the required files and output the parse tree.
 
 Repeat step 2 and 3 after every changes you make.
+
+# Possible issues
+- When trying to ruild the build script after everything has been installed,
+it's possible that you get an error similar to "Exception: Could not deserialize
+ATN with version  (expected 4). In that case, follow this link: https://stackoverflow.com/questions/76308886/could-not-deserialize-atn-with-version-expected-4-while-using-python-age-drive
