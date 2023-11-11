@@ -21,7 +21,6 @@ libraries required:
 - antlr4 (pip install antlr4-python3-runtime)
 - antlr4 (sudo apt-get install antlr4)
 - antlr4 tools (pip install antlr4-tools)
-- grun (sudo apt install grun)
 
 
 # How to use:
@@ -32,6 +31,11 @@ libraries required:
 3. Run ./build.sh to generate all the required files and output the parse tree.
 
 Repeat step 2 and 3 after every changes you make.
+
+
+# Generating Parse Tree
+- If you want to display the result in a parse tree, you'll need to download
+the ANTLR4 plugin for IntelliJ and watch this video on how to use it: https://www.youtube.com/watch?v=EDu7Z_F09Lw
 
 # Possible issues
 - When trying to ruild the build script after everything has been installed,
