@@ -30,7 +30,11 @@ DIV_SET: '/=';
 VAR: [a-zA-Z_][a-zA-Z0-9_]*;
 INT: [0-9]+;
 FLOAT: [0-9]+'.'[0-9]+;
+STRING: '"' (ESC | ~["\\])* '"';
 WS: [ \t\r\n]+ -> skip;
+
+fragment ESC: '\\' [btnr\\"];
+fragment DIGIT: [0-9];
 
 
 start: statement;
@@ -50,4 +54,4 @@ multiply_operation: single_operation ( (MULTIPLY | DIVIDE | MOD) single_operatio
 
 single_operation: PLUS number | MINUS number | number;
 
-number: INT | FLOAT | VAR;
+number: INT | FLOAT | VAR | STRING;
