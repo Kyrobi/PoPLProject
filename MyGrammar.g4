@@ -54,7 +54,7 @@ statement: assign_operation | expression | if_statement | while_statement | for_
 while_statement: WHILE expression DO statement;
 for_statement: FOR VAR SET INT TO INT DO statement;
 
-if_statement: IF expression THEN statement (ELIF expression THEN statement)* ELSE THEN statement;
+if_statement: IF expression THEN statement (ELIF expression THEN statement)* (ELSE statement)?;
 
 assign_operation: VAR SET expression;
 
