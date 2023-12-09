@@ -33,6 +33,11 @@ FLOAT: [0-9]+'.'[0-9]+;
 STRING: '"' (ESC | ~["\\])* '"';
 WS: [ \t\r\n]+ -> skip;
 
+SINGLE_LINE_COMMENT: '#' ~[\r\n]* -> skip;
+BLOCK_COMMENT: '###' .*? '###' -> skip;
+COMMAND: '#' ~[\r\n]*;
+MULTILINE_COMMAND: '\'\'\'' .*? '\'\'\'' -> skip;
+
 fragment ESC: '\\' [btnr\\"];
 fragment DIGIT: [0-9];
 
