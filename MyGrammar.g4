@@ -5,6 +5,12 @@ THEN: ':';
 ELSE: 'else';
 ELIF: 'elif';
 
+
+WHILE: 'while';
+FOR: 'for';
+TO: 'to';
+DO: 'do';
+
 LESS_THAN: '<';
 LESS_THAN_OR_EQUAL: '<=';
 GREATER_THAN: '>';
@@ -42,8 +48,11 @@ fragment ESC: '\\' [btnr\\"];
 fragment DIGIT: [0-9];
 
 
-start: statement;
-statement: assign_operation | expression | if_statement;
+start: statement+;
+statement: assign_operation | expression | if_statement | while_statement | for_statement;
+
+while_statement: WHILE expression DO statement;
+for_statement: FOR VAR SET INT TO INT DO statement;
 
 if_statement: IF expression THEN statement (ELIF expression THEN statement)* ELSE THEN statement;
 
