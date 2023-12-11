@@ -15,7 +15,9 @@ This is not meant to be a fully accurate solution, but a demonstration of the kn
 
 # Requirements 
 This program is test on Python 3.10.6. Other versions are not
-guaranteed to work.
+guaranteed to work. This program also requires installing pip to download. 
+Before installing it make sure your sudo is updated (sudo apt-get update).
+Install pip using the command (sudo apt install python3-pip).
 
 libraries required:
 - antlr4 (pip install antlr4-python3-runtime)
