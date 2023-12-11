@@ -14,7 +14,7 @@ This is not meant to be a fully accurate solution, but a demonstration of the kn
 - Aimen B.
 
 # Requirements 
-This program is tested on Python 3.10.6. Other versions are not guaranteed to work. 
+This program is tested on Python 3.10.6. Other versions are not guaranteed to work. The following are the **Linux** setup procedures.
 
 **This program also requires installing pip to download. 
 Before installing it make sure your sudo is updated (sudo apt-get update).
